@@ -8,11 +8,6 @@
   height: 2rem;
 }
 
-.outer {
-  overflow: hidden;
-  position: relative;
-}
-
 .nav {
   position: absolute;
   z-index: 11;
@@ -21,9 +16,6 @@
   width: 7rem;
   height: 100%;
   background: #555;
-  /* overflow-y: auto; */
   position: fixed;
-}
-.nav {
   transition: right linear 3s;
 }
