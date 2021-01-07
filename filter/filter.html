@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta charset="utf-8" /> 
+<title>div滤镜背景虚化</title> 
+
+</head> 
+<body> 
+    <div class="cell">
+        <p>嗷嗷嗷嗷嗷嗷嗷嗷啊</p>
+    </div>
+
+    <style>
+        .cell{
+            width: 500px;
+            height: 250px;
+            position: relative;
+        }
+        .cell::before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            background: url('https://www.oracle.com/asset/web/i/rw-pattern13.png');
+            filter: opacity(0.07);
+            /* filter: blur(3px);
+            -webkit-filter: blur(3px); */
+        }
+        .cell p{
+            font-size: 80px;
+            color: red;
+        }
+    </style>
+</body> 
+</html>
